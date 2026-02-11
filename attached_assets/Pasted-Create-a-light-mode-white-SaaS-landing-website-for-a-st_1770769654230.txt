@@ -1,0 +1,81 @@
+Create a light-mode (white) SaaS landing website for a startup that offers “Digital Infrastructure as a Service” (we act as a long-term external IT department for businesses: cloud, security, networks, support, monitoring).
+
+IMPORTANT: Use the same DESIGN FORMULA as Jira’s landing page (Atlassian-style): clean white background, strong typography, lots of whitespace, clear sections, friendly but enterprise feel, repeated CTAs, big illustrative visuals, and modular blocks. Do NOT copy Jira’s text or branding; only replicate the structure & UX patterns.
+
+TECH STACK
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- lucide-react icons
+- Framer Motion for subtle animations (fade/slide on scroll, hover micro-interactions)
+- Responsive + accessible (aria labels, keyboard focus)
+- SEO meta tags + OpenGraph + favicon placeholder
+
+VISUAL STYLE (LIGHT MODE)
+- Background: white with very subtle neutral sections (light gray/blue tint)
+- Accent: Atlassian-like blue tones (use a single primary blue + softer secondary blue)
+- Typography: modern, confident, high readability (clear headings, short lines)
+- UI: rounded cards, gentle shadows, thin borders, crisp icons
+- Add subtle background details: grid pattern or soft gradient shapes (very low contrast)
+
+SITE STRUCTURE (MATCH JIRA LANDING PAGE FORMULA)
+1) Top announcement bar (thin) with a short credibility message (e.g., “Security-first infrastructure, built to scale.”) + link button.
+2) Sticky navbar:
+   - Left: logo + brand name placeholder “NOVA INFRA”
+   - Links: Features, Solutions, Pricing, Resources, About, Contact
+   - Right: “Sign in” (placeholder) and Primary CTA “Get started” / “Book a call”
+3) HERO SECTION (above the fold):
+   - Big bold headline with a punchy phrase broken into 2 lines (Atlassian style)
+     Example: “Focus on outcomes, not IT chaos”
+   - Short supporting paragraph (1–2 lines)
+   - Email input + primary button (like Jira’s hero signup pattern)
+   - Secondary option “or continue with Google” button (UI only; no real auth)
+   - On the right: large clean illustration (build a custom SVG or simple abstract graphic — no external images required)
+4) “Use cases / teams” category tiles row (4 tiles):
+   - Engineering, Operations, IT, Growing Startups (or similar)
+   - Each tile has a small label, a title, and a thumbnail-style graphic block
+5) Customer logo strip (use neutral placeholders, NOT real company logos):
+   - “Trusted by teams building critical systems” + 6 grayscale placeholder logos (e.g., “Company A”)
+   - Make it look like Jira’s logo strip layout but with placeholders
+6) Big feature sections (2–3 sections) with:
+   - Left text, right large image/illustration (alternate layout each section)
+   - Each section has: eyebrow label, title, paragraph, 2–3 bullets, CTA link
+   - Include one section about AI/automation assistance (worded carefully, no fake claims)
+7) “Product tour” / “Discover” stepper carousel:
+   - 5 steps: Assess → Stabilize → Standardize → Optimize → Scale
+   - Stepper UI with numbered dots + matching illustration panel
+8) Integrations strip:
+   - Row of integration icons (Microsoft 365, Google Workspace, AWS, Azure, GitHub, Slack) as simple SVG/icon placeholders
+   - Copy: “If your team uses it, we integrate with it.”
+9) “Packages” (pricing-like) section:
+   - 3 tiers: Essential / Growth / Scale
+   - No prices; include “Request a quote”
+   - Each card includes what’s included and a badge like “Most popular”
+10) Testimonial section:
+   - Single big quote card with a person name + role (clearly marked as “Sample testimonial”)
+11) Final CTA section:
+   - Large centered text + short paragraph + CTA button
+12) Footer:
+   - Product, Company, Resources columns + legal placeholders + contact email
+
+PAGES
+- / (Home)
+- /features (detailed feature list + screenshots/illustrations)
+- /solutions (by team: Engineering/IT/Ops/Startups)
+- /pricing (tiers + FAQ accordion)
+- /about (mission + operating principles + team placeholders)
+- /contact (form + “what happens next” steps)
+
+FUNCTIONAL REQUIREMENTS
+- Smooth scroll to sections from the navbar on Home
+- Active nav link highlight while scrolling
+- Reusable components: Button, Input, Card, SectionHeader, LogoCloud, Stepper, Testimonial, FAQAccordion
+- Contact form with basic validation; API route logs submission to server console (no external service)
+
+CONTENT TONE
+- Enterprise-ready, confident, clean. Avoid fake metrics and fake client claims.
+- Use phrases like “designed to scale”, “SLA-based”, “security-first”, “documentation & reporting”.
+- Make copy short and skimmable (like top SaaS sites).
+
+DELIVERABLE
+- Provide full project structure and all code files.
+- Ensure it runs in Replit with one command.
+- Prioritize design polish: spacing, typography, section rhythm, and micro-interactions.
