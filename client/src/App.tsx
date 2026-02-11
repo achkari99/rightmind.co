@@ -5,13 +5,13 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
+import Features from "@/pages/features";
+import Pricing from "@/pages/pricing";
+import Contact from "@/pages/contact";
 
-// Placeholder pages for routing structure
-const Features = () => <div className="min-h-screen flex items-center justify-center font-sans text-2xl font-bold">Features Page Placeholder</div>;
+// Minimal placeholders for remaining pages
 const Solutions = () => <div className="min-h-screen flex items-center justify-center font-sans text-2xl font-bold">Solutions Page Placeholder</div>;
-const Pricing = () => <div className="min-h-screen flex items-center justify-center font-sans text-2xl font-bold">Pricing Page Placeholder</div>;
 const About = () => <div className="min-h-screen flex items-center justify-center font-sans text-2xl font-bold">About Page Placeholder</div>;
-const Contact = () => <div className="min-h-screen flex items-center justify-center font-sans text-2xl font-bold">Contact Page Placeholder</div>;
 
 function Router() {
   return (
