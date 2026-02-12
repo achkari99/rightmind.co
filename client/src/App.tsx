@@ -8,10 +8,9 @@ import Home from "@/pages/home";
 import Features from "@/pages/features";
 import Pricing from "@/pages/pricing";
 import Contact from "@/pages/contact";
-
-// Minimal placeholders for remaining pages
-const Solutions = () => <div className="min-h-screen flex items-center justify-center font-sans text-2xl font-bold">Solutions Page Placeholder</div>;
-const About = () => <div className="min-h-screen flex items-center justify-center font-sans text-2xl font-bold">About Page Placeholder</div>;
+import Solutions from "@/pages/solutions";
+import Resources from "@/pages/resources";
+import About from "@/pages/about";
 
 function Router() {
   return (
@@ -20,6 +19,7 @@ function Router() {
       <Route path="/features" component={Features} />
       <Route path="/solutions" component={Solutions} />
       <Route path="/pricing" component={Pricing} />
+      <Route path="/resources" component={Resources} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
