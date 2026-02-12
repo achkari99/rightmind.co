@@ -1,0 +1,46 @@
+You are an expert B2B website conversion strategist + UI/UX copywriter.
+
+Goal: Re-arrange my existing clean website sections (keep the same design system and components as much as possible) into a B2B “risk-reduction funnel” that sells to SMEs + medium/large organizations.
+
+Do NOT redesign from scratch. Focus on:
+- section order
+- section titles
+- copy structure (headlines, subheadlines, bullets)
+- CTAs
+- trust signals
+Keep it minimal and premium.
+
+Target audience:
+- Decision makers (Marketing/Operations/IT/Founder) in Morocco
+- Medium + growing companies, not cafes/restaurants
+Main buyer concerns:
+- risk, predictability, timelines, ROI, credibility, process
+
+Primary positioning (use this exact structure, adjust words only slightly):
+Headline formula: “We help [industry/companies] [outcome] using practical AI + automation.”
+Subheadline: “Fast, measurable pilots → reliable implementation → long-term optimization.”
+
+Primary CTA (top and bottom): “Request a 14-Day Pilot”
+Secondary CTA: “Get a Free 5-Point Audit”
+
+Required final section order (use this exact sequence):
+1) HERO (clear positioning + 1 sentence credibility + primary/secondary CTA)
+2) PROBLEM (3–5 pain bullets that organizations feel)
+3) APPROACH / PROCESS (4 steps: Audit → 14-Day Pilot → Implementation → Optimization)
+4) PROOF (case studies / before-after / metrics; if missing, create “pilot examples” placeholders)
+5) OFFERS (group services by OUTCOME, not tech: Automation / Conversion / Data visibility)
+6) TRUST (security basics, documentation, contract clarity, support/maintenance, delivery timeline)
+7) ABOUT (operator tone: mission, why we exist, why we’re safe to work with; short)
+8) CTA (repeat: Request Pilot + Audit)
+
+Instructions:
+- Identify my current sections and map them into the order above.
+- If any section is missing, create a minimal section with placeholder content that fits the design.
+- Rewrite copy to be concise, enterprise-safe, and measurable (avoid hype words like “revolutionary”).
+- Keep each section small: max 1 headline, 1 short paragraph, 3–6 bullets, 1 CTA (only where relevant).
+- Add “micro-proof” everywhere: numbers, timelines, deliverables (even if placeholders).
+- Use Morocco-friendly wording: emphasize WhatsApp as an optional communication channel, but keep it professional.
+
+Output:
+1) A clear list: “Old sections → New order mapping”
+2) Final

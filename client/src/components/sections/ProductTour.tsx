@@ -2,33 +2,28 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import featureScale from "@/assets/feature-scale.png"; // Reuse existing image for tour mockup
+import featureScale from "@/assets/feature-scale.png";
 
 const steps = [
   {
     id: 1,
-    title: "Assess",
-    desc: "Full audit of your current infrastructure, security gaps, and performance bottlenecks.",
+    title: "Audit",
+    desc: "A 5-point assessment of your current manual bottlenecks and automation potential.",
   },
   {
     id: 2,
-    title: "Stabilize",
-    desc: "Immediate remediation of critical risks and implementation of failover systems.",
+    title: "14-Day Pilot",
+    desc: "Fast-track implementation of a high-impact automation to prove ROI immediately.",
   },
   {
     id: 3,
-    title: "Standardize",
-    desc: "Implementation of IaC (Infrastructure as Code) and consistent environments.",
+    title: "Implementation",
+    desc: "Full-scale rollout of the optimized infrastructure across your target departments.",
   },
   {
     id: 4,
-    title: "Optimize",
-    desc: "Cost reduction and performance tuning through automated resource management.",
-  },
-  {
-    id: 5,
-    title: "Scale",
-    desc: "Architecture ready for 10x growth with zero manual intervention.",
+    title: "Optimization",
+    desc: "Long-term monitoring and iterative improvements based on real-world data.",
   }
 ];
 
@@ -39,12 +34,11 @@ const ProductTour = () => {
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">From chaos to clarity</h2>
-          <p className="text-lg text-muted-foreground">Our proven methodology for transforming legacy IT into a modern digital engine.</p>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">A process built for predictability</h2>
+          <p className="text-lg text-muted-foreground">We eliminate implementation risk through a phased, results-first approach.</p>
         </div>
 
         <div className="grid md:grid-cols-12 gap-12 items-center">
-          {/* Stepper Controls */}
           <div className="md:col-span-5 flex flex-col gap-2">
             {steps.map((step, index) => (
               <button
@@ -79,7 +73,7 @@ const ProductTour = () => {
                           initial={{ opacity: 0, height: 0 }}
                           animate={{ opacity: 1, height: "auto" }}
                           exit={{ opacity: 0, height: 0 }}
-                          className="text-muted-foreground leading-relaxed"
+                          className="text-muted-foreground leading-relaxed text-sm"
                         >
                           {step.desc}
                         </motion.p>
@@ -91,7 +85,6 @@ const ProductTour = () => {
             ))}
           </div>
 
-          {/* Visualization */}
           <div className="md:col-span-7">
             <div className="relative aspect-[4/3] bg-white rounded-2xl shadow-xl border border-border p-2">
                <AnimatePresence mode="wait">
@@ -103,15 +96,14 @@ const ProductTour = () => {
                    transition={{ duration: 0.3 }}
                    className="w-full h-full bg-muted/10 rounded-xl overflow-hidden relative"
                  >
-                    {/* Placeholder content that changes based on step - using CSS patterns for now */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
                        <img 
                         src={featureScale} 
                         className="w-3/4 opacity-80 mix-blend-multiply" 
-                        alt="Process Visualization"
+                        alt="Process phase"
                        />
                        <div className="absolute top-6 left-6 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold shadow-sm border text-primary">
-                         Phase {activeStep + 1}: {steps[activeStep].title}
+                         Step {activeStep + 1}: {steps[activeStep].title}
                        </div>
                     </div>
                  </motion.div>
