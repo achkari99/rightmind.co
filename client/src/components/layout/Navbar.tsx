@@ -17,10 +17,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "/features" },
-    { name: "Solutions", href: "/solutions" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Resources", href: "#resources" }, // Placeholder
+    { name: "Services", href: "/services" },
+    { name: "How We Work", href: "/how-we-work" },
+    { name: "Case Studies", href: "/case-studies" },
+    { name: "Resources", href: "/resources" },
+    { name: "Security", href: "/security" },
     { name: "About", href: "/about" },
   ];
 
@@ -28,8 +29,8 @@ const Navbar = () => {
     <>
       {/* Announcement Bar */}
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center text-sm font-medium">
-        <span className="opacity-90">Security-first infrastructure, built to scale.</span>
-        <a href="#" className="ml-2 underline underline-offset-2 hover:opacity-80">Read the report →</a>
+        <span className="opacity-90">Enterprise-safe automation pilots.</span>
+        <Link href="/contact" className="ml-2 underline underline-offset-2 hover:opacity-80 cursor-pointer">Request 14-Day Pilot →</Link>
       </div>
 
       {/* Main Navbar */}
@@ -45,17 +46,15 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 font-bold text-xl tracking-tight text-primary">
-              <div className="w-8 h-8 rounded bg-primary flex items-center justify-center text-white">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
+              <div className="w-8 h-8 rounded bg-primary flex items-center justify-center text-white text-xs">
+                NI
               </div>
               NOVA INFRA
             </a>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden xl:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link key={link.name} href={link.href}>
                 <a className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
@@ -67,15 +66,19 @@ const Navbar = () => {
 
           {/* Right Actions */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="text-muted-foreground hover:text-primary">
-              Sign in
-            </Button>
-            <Button>Get Started</Button>
+            <Link href="/contact">
+              <Button variant="ghost" className="text-muted-foreground hover:text-primary">
+                Contact
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button>Request Pilot</Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 text-muted-foreground"
+            className="xl:hidden p-2 text-muted-foreground"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -84,7 +87,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 w-full bg-background border-b border-border p-4 flex flex-col gap-4 shadow-lg animate-in slide-in-from-top-5">
+          <div className="xl:hidden absolute top-16 left-0 w-full bg-background border-b border-border p-4 flex flex-col gap-4 shadow-lg animate-in slide-in-from-top-5">
             {navLinks.map((link) => (
               <Link key={link.name} href={link.href}>
                 <a 
@@ -96,8 +99,8 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="flex flex-col gap-2 mt-2">
-              <Button variant="outline" className="w-full">Sign in</Button>
-              <Button className="w-full">Get Started</Button>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}><Button variant="outline" className="w-full">Contact</Button></Link>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}><Button className="w-full">Request Pilot</Button></Link>
             </div>
           </div>
         )}

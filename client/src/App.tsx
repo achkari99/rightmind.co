@@ -11,16 +11,23 @@ import Contact from "@/pages/contact";
 import Solutions from "@/pages/solutions";
 import Resources from "@/pages/resources";
 import About from "@/pages/about";
+import Security from "@/pages/security";
+import HowWeWork from "@/pages/how-we-work";
+import CaseStudies from "@/pages/case-studies";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/services" component={Pricing} />
       <Route path="/features" component={Features} />
       <Route path="/solutions" component={Solutions} />
+      <Route path="/case-studies" component={CaseStudies} />
+      <Route path="/how-we-work" component={HowWeWork} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/resources" component={Resources} />
       <Route path="/about" component={About} />
+      <Route path="/security" component={Security} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>

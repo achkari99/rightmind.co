@@ -1,0 +1,67 @@
+You are an expert B2B website conversion strategist + information architect + enterprise UX copywriter.
+
+Context:
+I already have a clean website. I’m targeting Moroccan SMEs and medium/large organizations (not cafés/restaurants). My offer is practical AI + automation + digital performance. I want the site to feel premium, structured, “safe”, and execution-focused.
+
+Task:
+Define the full website page map and for EACH page:
+- purpose (what buyer question it answers)
+- ideal section order
+- what each section should contain (headline + short copy + bullets)
+- what proof/trust to include
+- primary CTA + secondary CTA
+- notes on tone (enterprise-safe, no hype)
+- keep layout minimal; reuse existing design system; do not redesign.
+
+IMPORTANT RULES:
+- Avoid vague claims (“revolutionary”, “cutting-edge”).
+- Every page must include micro-credibility: process, timelines, deliverables, or metrics (placeholders allowed).
+- Structure services by OUTCOME, not tools.
+- Use a “risk-reduction funnel”: clarity → safety → proof → action.
+- Morocco-friendly: optionally mention WhatsApp as a channel, but keep it professional.
+- Keep each section compact: 1 headline, 1 short paragraph, 3–6 bullets max.
+- If I lack real case studies, propose “Pilot examples” placeholders with realistic metrics format (e.g., response time, conversion, hours saved).
+
+Deliverable format:
+1) Site Map (list all pages in best order)
+2) For each page, output a blueprint using this template:
+
+PAGE: [Name]
+Goal:
+Primary audience & intent:
+Primary CTA:
+Secondary CTA:
+Sections (in order):
+  1) [Section name]
+     - Headline:
+     - 1–2 sentence copy:
+     - Bullets (3–6):
+     - Proof/Trust element:
+     - CTA (if any):
+  2) ...
+SEO/Content notes (optional):
+Design notes (minimal, reuse existing components):
+
+Pages to include (use these unless you strongly recommend removing one):
+- Home
+- Services (overview)
+- Service Detail Pages (one per offer bucket)
+- Case Studies / Results
+- How We Work (process)
+- Insights / Resources
+- About
+- Contact / Request Pilot
+- FAQ (objection handling)
+- Security & Data Handling (enterprise trust)
+- Legal pages: Privacy Policy + Terms
+
+Offer buckets (use these exact categories and build pages around them):
+1) Automation Systems (internal workflows, support triage, reporting automation)
+2) Conversion & Growth (landing pages, funnels, tracking, experimentation)
+3) Data Visibility (dashboards, KPIs, analytics setup)
+
+Make the plan opinionated: recommend what to keep minimal, what to highlight, and what NOT to include.
+
+Ask me ONLY ONE question at the end if absolutely necessary; otherwise make reasonable assumptions.
+
+Now create the full blueprint.
