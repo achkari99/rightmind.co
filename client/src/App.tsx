@@ -9,9 +9,9 @@ import Features from "@/pages/features";
 import Pricing from "@/pages/pricing";
 import Contact from "@/pages/contact";
 import Solutions from "@/pages/solutions";
-import Resources from "@/pages/resources";
 import About from "@/pages/about";
 import Security from "@/pages/security";
+import Resources from "@/pages/resources";
 import HowWeWork from "@/pages/how-we-work";
 import CaseStudies from "@/pages/case-studies";
 
@@ -25,9 +25,9 @@ function Router() {
       <Route path="/case-studies" component={CaseStudies} />
       <Route path="/how-we-work" component={HowWeWork} />
       <Route path="/pricing" component={Pricing} />
+      <Route path="/security" component={Security} />
       <Route path="/resources" component={Resources} />
       <Route path="/about" component={About} />
-      <Route path="/security" component={Security} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>

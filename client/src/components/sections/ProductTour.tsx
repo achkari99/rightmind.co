@@ -1,114 +1,139 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
-import { Card } from "@/components/ui/card";
-import featureScale from "@/assets/feature-scale.png";
 
 const steps = [
   {
     id: 1,
-    title: "Audit",
-    desc: "A 5-point assessment of your current manual bottlenecks and automation potential.",
+    title: "Assess",
+    desc: "We audit your infrastructure and workflows to expose bottlenecks, risks, and quick-win automation targets.",
+    color: "bg-blue-500",
+    progress: "bg-blue-500",
   },
   {
     id: 2,
-    title: "14-Day Pilot",
-    desc: "Fast-track implementation of a high-impact automation to prove ROI immediately.",
+    title: "Stabilize",
+    desc: "We reduce incidents with hardening, alerting, and reliability fixes across your core systems.",
+    color: "bg-sky-500",
+    progress: "bg-sky-500",
   },
   {
     id: 3,
-    title: "Implementation",
-    desc: "Full-scale rollout of the optimized infrastructure across your target departments.",
+    title: "Standardize",
+    desc: "We align tooling and processes so teams operate from consistent baselines and shared playbooks.",
+    color: "bg-cyan-500",
+    progress: "bg-cyan-500",
   },
   {
     id: 4,
-    title: "Optimization",
-    desc: "Long-term monitoring and iterative improvements based on real-world data.",
-  }
+    title: "Optimize",
+    desc: "We improve cost, speed, and quality using measured iterations based on real operational data.",
+    color: "bg-indigo-500",
+    progress: "bg-indigo-500",
+  },
+  {
+    id: 5,
+    title: "Scale",
+    desc: "We expand capacity and coverage without losing control, visibility, or service quality.",
+    color: "bg-blue-600",
+    progress: "bg-blue-600",
+  },
 ];
 
 const ProductTour = () => {
-  const [activeStep, setActiveStep] = useState(0);
+  const [activeStep, setActiveStep] = useState(1);
+  const active = steps[activeStep - 1];
 
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">A process built for predictability</h2>
-          <p className="text-lg text-muted-foreground">We eliminate implementation risk through a phased, results-first approach.</p>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-16 items-start">
+          <div className="lg:sticky lg:top-28">
+            <h2 className="text-3xl md:text-4xl font-bold mb-5">From chaos to clarity in 5 steps</h2>
+            <p className="text-lg text-muted-foreground mb-10 max-w-xl">
+              Our proven methodology transforms your operations without disrupting your team.
+            </p>
 
-        <div className="grid md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-5 flex flex-col gap-2">
-            {steps.map((step, index) => (
-              <button
-                key={step.id}
-                onClick={() => setActiveStep(index)}
-                className={cn(
-                  "text-left p-6 rounded-xl transition-all duration-300 relative overflow-hidden group border-l-4",
-                  activeStep === index 
-                    ? "bg-white shadow-md border-primary" 
-                    : "hover:bg-white/50 border-transparent hover:border-primary/30"
-                )}
-              >
-                <div className="flex items-baseline gap-4">
-                  <span className={cn(
-                    "text-sm font-bold w-6 h-6 rounded-full flex items-center justify-center border",
-                    activeStep === index 
-                      ? "bg-primary text-primary-foreground border-primary" 
-                      : "text-muted-foreground border-muted-foreground/30"
-                  )}>
-                    {step.id}
-                  </span>
-                  <div className="flex-1">
-                    <h3 className={cn(
-                      "font-semibold text-xl mb-1",
-                      activeStep === index ? "text-primary" : "text-foreground/80"
-                    )}>
-                      {step.title}
-                    </h3>
-                    <AnimatePresence>
-                      {activeStep === index && (
-                        <motion.p 
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
-                          className="text-muted-foreground leading-relaxed text-sm"
-                        >
-                          {step.desc}
-                        </motion.p>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </div>
-              </button>
-            ))}
+            <div className="relative ml-4 border-l-2 border-slate-200">
+              {steps.map((step) => (
+                <button
+                  key={step.id}
+                  type="button"
+                  onClick={() => setActiveStep(step.id)}
+                  className="relative block w-full text-left pl-12 pb-10 last:pb-0 group"
+                >
+                  <span
+                    className={cn(
+                      "absolute -left-[9px] top-1 size-4 rounded-full border-2 transition-all duration-300",
+                      activeStep === step.id
+                        ? "bg-white border-primary scale-125 ring-4 ring-primary/20"
+                        : activeStep > step.id
+                          ? "bg-primary border-primary"
+                          : "bg-white border-slate-300 group-hover:border-primary/50",
+                    )}
+                  />
+                  <h3
+                    className={cn(
+                      "text-2xl font-bold mb-2 transition-colors duration-300",
+                      activeStep === step.id ? "text-primary" : "text-slate-400 group-hover:text-slate-600",
+                    )}
+                  >
+                    {step.title}
+                  </h3>
+                  <p
+                    className={cn(
+                      "text-slate-600 transition-all duration-300",
+                      activeStep === step.id ? "opacity-100 max-h-24" : "opacity-0 max-h-0 overflow-hidden",
+                    )}
+                  >
+                    {step.desc}
+                  </p>
+                </button>
+              ))}
+            </div>
           </div>
 
-          <div className="md:col-span-7">
-            <div className="relative aspect-[4/3] bg-white rounded-2xl shadow-xl border border-border p-2">
-               <AnimatePresence mode="wait">
-                 <motion.div
-                   key={activeStep}
-                   initial={{ opacity: 0, x: 20 }}
-                   animate={{ opacity: 1, x: 0 }}
-                   exit={{ opacity: 0, x: -20 }}
-                   transition={{ duration: 0.3 }}
-                   className="w-full h-full bg-muted/10 rounded-xl overflow-hidden relative"
-                 >
-                    <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                       <img 
-                        src={featureScale} 
-                        className="w-3/4 opacity-80 mix-blend-multiply" 
-                        alt="Process phase"
-                       />
-                       <div className="absolute top-6 left-6 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold shadow-sm border text-primary">
-                         Step {activeStep + 1}: {steps[activeStep].title}
-                       </div>
-                    </div>
-                 </motion.div>
-               </AnimatePresence>
-            </div>
+          <div className="relative h-[520px] bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-xl p-8 flex items-center justify-center">
+            <motion.div
+              key={activeStep}
+              initial={{ opacity: 0, scale: 0.94 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3 }}
+              className="text-center z-10"
+            >
+              <div
+                className={cn(
+                  "size-32 rounded-3xl mx-auto mb-8 flex items-center justify-center text-4xl font-bold text-white shadow-xl",
+                  active.color,
+                )}
+              >
+                {activeStep}
+              </div>
+              <h3 className="text-4xl md:text-5xl font-bold mb-4 text-slate-700">{active.title} Phase</h3>
+              <div className="h-2 w-32 mx-auto bg-slate-200 rounded-full overflow-hidden">
+                <motion.div
+                  className={cn("h-full", active.progress)}
+                  initial={{ width: 0 }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 0.9 }}
+                />
+              </div>
+              <div className="mt-10 grid grid-cols-2 gap-4 opacity-60">
+                <div className="h-4 bg-slate-200 rounded w-full" />
+                <div className="h-4 bg-slate-200 rounded w-2/3" />
+                <div className="h-4 bg-slate-200 rounded w-3/4" />
+                <div className="h-4 bg-slate-200 rounded w-full" />
+              </div>
+            </motion.div>
+
+            <div
+              className="absolute inset-0 opacity-50 pointer-events-none"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, rgba(148,163,184,0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(148,163,184,0.15) 1px, transparent 1px)",
+                backgroundSize: "40px 40px",
+              }}
+            />
           </div>
         </div>
       </div>

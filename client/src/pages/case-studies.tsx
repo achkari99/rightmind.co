@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CTA from "@/components/sections/CTA";
+import Testimonials from "@/components/sections/Testimonials";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, TrendingUp, Clock, Users } from "lucide-react";
@@ -60,6 +61,8 @@ const CaseStudiesPage = () => {
             </p>
           </div>
         </section>
+
+        <Testimonials />
 
         <section className="py-20">
           <div className="container mx-auto px-4">

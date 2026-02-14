@@ -1,68 +1,56 @@
-import { Code, Server, ShieldCheck, Rocket } from "lucide-react";
+import { BarChart3, Lock, Server, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { motion } from "framer-motion";
 
 const useCases = [
   {
-    icon: Code,
-    label: "Engineering",
-    title: "Ship faster with zero-config DevOps",
-    color: "text-blue-600",
-    bg: "bg-blue-50"
+    icon: Users,
+    title: "Support Teams",
+    desc: "Automate triage and reduce ticket handling time.",
+    outcome: "Faster response and fewer escalations",
   },
   {
     icon: Server,
-    label: "Operations",
-    title: "99.99% uptime SLA guarantee",
-    color: "text-indigo-600",
-    bg: "bg-indigo-50"
+    title: "Operations",
+    desc: "Standardize monitoring, backups, and incident workflows.",
+    outcome: "Higher uptime with less manual effort",
   },
   {
-    icon: ShieldCheck,
-    label: "IT & Security",
-    title: "Enterprise-grade SOC2 compliance",
-    color: "text-emerald-600",
-    bg: "bg-emerald-50"
+    icon: Lock,
+    title: "Security & IT",
+    desc: "Apply baseline controls across tools and environments.",
+    outcome: "Stronger compliance and lower risk",
   },
   {
-    icon: Rocket,
-    label: "Startups",
-    title: "Scale from day one without debt",
-    color: "text-purple-600",
-    bg: "bg-purple-50"
-  }
+    icon: BarChart3,
+    title: "Leadership",
+    desc: "Unify KPIs in real-time dashboards for decision speed.",
+    outcome: "Clear visibility across teams and systems",
+  },
 ];
 
 const UseCaseGrid = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {useCases.map((item, index) => (
-            <motion.div
-              key={item.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <Card className="h-full border border-border/60 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-pointer overflow-hidden">
-                <CardContent className="p-6">
-                  <div className={`w-12 h-12 rounded-lg ${item.bg} ${item.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <item.icon className="w-6 h-6" />
-                  </div>
-                  <p className={`text-xs font-bold uppercase tracking-wider mb-2 ${item.color}`}>
-                    {item.label}
-                  </p>
-                  <h3 className="font-semibold text-lg leading-tight text-foreground">
-                    {item.title}
-                  </h3>
-                  <div className="mt-4 flex items-center text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
-                    Learn more <span className="ml-1">→</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Solutions that fit how your team works</h2>
+          <p className="text-lg text-muted-foreground">
+            Focused solutions mapped to real operational roles, with clear outcomes.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {useCases.map((item) => (
+            <Card key={item.title} className="h-full border border-border/60 shadow-sm hover:shadow-md transition-shadow">
+              <CardContent className="p-6">
+                <div className="w-11 h-11 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
+                  <item.icon className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-xl mb-2">{item.title}</h3>
+                <p className="text-muted-foreground mb-3">{item.desc}</p>
+                <p className="text-sm font-semibold text-primary">{item.outcome}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
