@@ -16,7 +16,7 @@ const Hero = () => {
             className="max-w-xl mx-auto md:mx-0"
           >
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground leading-[1.15] mb-6">
-              We help Moroccan enterprises <span className="text-primary">scale outcomes</span> using practical AI + automation.
+              We help enterprises <span className="text-primary">scale outcomes</span> using practical AI + automation.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
               Fast, measurable pilots → reliable implementation → long-term optimization. Security-first infrastructure built for the local market.
@@ -46,8 +46,8 @@ const Hero = () => {
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-white/50 backdrop-blur-sm">
                <img 
-                 src={heroImage} 
-                 alt="NOVA INFRA Enterprise Solutions" 
+                 src={heroImage.src} 
+                 alt="RightMinds Enterprise Solutions" 
                  className="w-full h-auto object-cover"
                />
             </div>

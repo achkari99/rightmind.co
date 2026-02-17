@@ -1,0 +1,938 @@
+[00:00:01.251] Server  LOG     ✓ Ready in 811ms
+[00:00:06.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.412] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           __processed_a366ac93-6aee-421a-a22f-d5bbcdeb9910__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                            ...
+                              <div className="min-h-scre...">
+                                <Navbar>
+                                <main className="flex-grow">
+                                  ...
+                                    <div className="grid md:gr...">
+                                      <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} ...>
+                                        <div
+                                          className="max-w-xl mx-auto md:mx-0"
+                                          style={{opacity:0,transform:"translateY..."}}
+                                          ref={function useMotionRef.useCallback}
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h1>
+                                          <p>
+                                          <div
+                                            className="flex flex-col sm:flex-row gap-3 mb-6 justify-center md:justify-..."
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="flex items-center gap-4 text-sm text-muted-foreground justify-c..."
+-                                           bis_skin_checked="1"
+                                          >
+                                      <motion.div initial={{opacity:0,x:20}} animate={{opacity:1,x:0}} ...>
+                                        <div
+                                          className="relative"
+                                          style={{opacity:0,transform:"translateX..."}}
+                                          ref={function useMotionRef.useCallback}
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border bor..."
+-                                           bis_skin_checked="1"
+                                          >
+                                  <ProblemOutcome>
+                                    <section className="py-20 bg-w...">
+                                      <div
+                                        className="container mx-auto px-4"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="grid md:grid-cols-2 gap-12 md:gap-24 relative"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <motion.div style={{top:"10%"}} animate={{top:[...]}} ...>
+                                              <div
+                                                className="absolute left-1/2 -translate-x-1/2 w-3 h-3 bg-primary round..."
+                                                style={{top:"10%"}}
+                                                ref={function useMotionRef.useCallback}
+-                                               bis_skin_checked="1"
+                                              >
+                                          <div
+                                            className="md:pr-12 md:text-right"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <h2>
+                                            <ul className="space-y-6">
+                                              <li className="flex items...">
+                                                <span>
+                                                <div
+                                                  className="flex-shrink-0 size-8 rounded-full bg-red-50 flex items-ce..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                              <li className="flex items...">
+                                                <span>
+                                                <div
+                                                  className="flex-shrink-0 size-8 rounded-full bg-red-50 flex items-ce..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                              <li className="flex items...">
+                                                <span>
+                                                <div
+                                                  className="flex-shrink-0 size-8 rounded-full bg-red-50 flex items-ce..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                          <div
+                                            className="md:pl-12"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <h2>
+                                            <ul className="space-y-6">
+                                              <li className="flex items...">
+                                                <div
+                                                  className="flex-shrink-0 size-8 rounded-full bg-green-50 flex items-..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                ...
+                                              <li className="flex items...">
+                                                <div
+                                                  className="flex-shrink-0 size-8 rounded-full bg-green-50 flex items-..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                ...
+                                              <li className="flex items...">
+                                                <div
+                                                  className="flex-shrink-0 size-8 rounded-full bg-green-50 flex items-..."
+-                                                 bis_skin_checked="1"
+                                                >
+                                                ...
+                                  <ProductTour>
+                                    <section className="py-24 bg-w...">
+                                      <div
+                                        className="container mx-auto px-4 md:px-6"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="grid lg:grid-cols-2 gap-14 lg:gap-16 items-start"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="lg:sticky lg:top-28"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h2>
+                                            <p>
+                                            <div
+                                              className="relative ml-4 border-l-2 border-slate-200"
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="relative h-[520px] bg-slate-50 rounded-2xl border border-slate-..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1}} ...>
+                                              <div
+                                                className="text-center z-10"
+                                                style={{opacity:0,transform:"scale(0.94)"}}
+                                                ref={function useMotionRef.useCallback}
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+                                                  className="size-32 rounded-3xl mx-auto mb-8 flex items-center justif..."
+-                                                 bis_skin_checked="1"
+                                                >
++                                                 1
+                                                <h3>
+                                                <div
+                                                  className="h-2 w-32 mx-auto bg-slate-200 rounded-full overflow-hidden"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <motion.div className="h-full bg-..." initial={{width:0}} ...>
+                                                    <div
+                                                      className="h-full bg-blue-500"
+                                                      style={{width:"0px"}}
+                                                      ref={function useMotionRef.useCallback}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                <div
+                                                  className="mt-10 grid grid-cols-2 gap-4 opacity-60"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <div
+                                                    className="h-4 bg-slate-200 rounded w-full"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="h-4 bg-slate-200 rounded w-2/3"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="h-4 bg-slate-200 rounded w-3/4"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  <div
+                                                    className="h-4 bg-slate-200 rounded w-full"
+-                                                   bis_skin_checked="1"
+                                                  >
+                                            <div
+                                              className="absolute inset-0 opacity-50 pointer-events-none"
+                                              style={{backgroundImage:"linear-gra...",backgroundSize:"40px 40px"}}
+-                                             bis_skin_checked="1"
+                                            >
+                                  <UseCaseGrid>
+                                    <section className="py-20 bg-w...">
+                                      <div
+                                        className="container mx-auto px-4 md:px-6"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="text-center max-w-3xl mx-auto mb-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <_c className="h-full bor...">
+                                            <div
+                                              ref={null}
+                                              className="rounded-xl bg-card text-card-foreground h-full border border-..."
+-                                             bis_skin_checked="1"
+                                            >
+                                              <_c8 className="p-6">
+                                                <div
+                                                  ref={null}
+                                                  className="p-6"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <div
+                                                    className="w-11 h-11 rounded-lg bg-primary/10 text-primary flex it..."
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  ...
+                                          <_c className="h-full bor...">
+                                            <div
+                                              ref={null}
+                                              className="rounded-xl bg-card text-card-foreground h-full border border-..."
+-                                             bis_skin_checked="1"
+                                            >
+                                              <_c8 className="p-6">
+                                                <div
+                                                  ref={null}
+                                                  className="p-6"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <div
+                                                    className="w-11 h-11 rounded-lg bg-primary/10 text-primary flex it..."
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  ...
+                                          <_c className="h-full bor...">
+                                            <div
+                                              ref={null}
+                                              className="rounded-xl bg-card text-card-foreground h-full border border-..."
+-                                             bis_skin_checked="1"
+                                            >
+                                              <_c8 className="p-6">
+                                                <div
+                                                  ref={null}
+                                                  className="p-6"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <div
+                                                    className="w-11 h-11 rounded-lg bg-primary/10 text-primary flex it..."
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  ...
+                                          <_c className="h-full bor...">
+                                            <div
+                                              ref={null}
+                                              className="rounded-xl bg-card text-card-foreground h-full border border-..."
+-                                             bis_skin_checked="1"
+                                            >
+                                              <_c8 className="p-6">
+                                                <div
+                                                  ref={null}
+                                                  className="p-6"
+-                                                 bis_skin_checked="1"
+                                                >
+                                                  <div
+                                                    className="w-11 h-11 rounded-lg bg-primary/10 text-primary flex it..."
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                  ...
+                                  <Proof>
+                                    <section className="py-20 bg-p...">
+                                      <div
+                                        className="container mx-auto px-4"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <h2>
+                                        <div
+                                          className="grid md:grid-cols-3 gap-8 text-center"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="text-5xl font-extrabold mb-2"
+-                                             bis_skin_checked="1"
+                                            >
++                                             40%
+                                            <div
+                                              className="text-lg font-semibold mb-1"
+-                                             bis_skin_checked="1"
+                                            >
++                                             Reduction in Operational Lag
+                                            <div
+                                              className="text-primary-foreground/60 text-sm"
+-                                             bis_skin_checked="1"
+                                            >
++                                             Logistic Firm Pilot
+                                          <div
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="text-5xl font-extrabold mb-2"
+-                                             bis_skin_checked="1"
+                                            >
++                                             14 Days
+                                            <div
+                                              className="text-lg font-semibold mb-1"
+-                                             bis_skin_checked="1"
+                                            >
++                                             To First Measurable ROI
+                                            <div
+                                              className="text-primary-foreground/60 text-sm"
+-                                             bis_skin_checked="1"
+                                            >
++                                             Average Pilot Timeline
+                                          <div
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="text-5xl font-extrabold mb-2"
+-                                             bis_skin_checked="1"
+                                            >
++                                             Zero
+                                            <div
+                                              className="text-lg font-semibold mb-1"
+-                                             bis_skin_checked="1"
+                                            >
++                                             Disruption to Operations
+                                            <div
+                                              className="text-primary-foreground/60 text-sm"
+-                                             bis_skin_checked="1"
+                                            >
++                                             Implementation Guarantee
+                                  <Pricing>
+                                    <section className="py-24 bg-s..." id="services">
+                                      <div
+                                        className="container mx-auto px-4 md:px-6"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="text-center mb-12"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h2>
+                                          <div
+                                            className="flex items-center justify-center gap-4"
+-                                           bis_skin_checked="1"
+                                          >
+                                        <div
+                                          className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <div
+                                              className="mb-8"
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                          <div
+                                            className="bg-white p-8 rounded-2xl border-2 border-primary shadow-xl rela..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="absolute top-0 right-0 -translate-y-1/2 md:translate-x-0 bg-p..."
+-                                             bis_skin_checked="1"
+                                            >
++                                             Most Popular
+                                            <h3>
+                                            <p>
+                                            <div
+                                              className="mb-8"
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                          <div
+                                            className="bg-slate-900 text-white p-8 rounded-2xl border border-slate-800..."
+-                                           bis_skin_checked="1"
+                                          >
+                                            <h3>
+                                            <p>
+                                            <div
+                                              className="mb-8"
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                  <Trust>
+                                    <section className="py-20 bg-m...">
+                                      <div
+                                        className="container mx-auto px-4"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <h2>
+                                        <div
+                                          className="grid grid-cols-2 md:grid-cols-5 gap-8"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="text-center"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-ce..."
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                          <div
+                                            className="text-center"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-ce..."
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                          <div
+                                            className="text-center"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-ce..."
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                          <div
+                                            className="text-center"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-ce..."
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                          <div
+                                            className="text-center"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-ce..."
+-                                             bis_skin_checked="1"
+                                            >
+                                            ...
+                                  <About>
+                                    <section className="py-24 bg-w...">
+                                      <div
+                                        className="container mx-auto px-4 max-w-4xl"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="grid md:grid-cols-2 gap-12 items-center"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="bg-secondary/10 p-8 rounded-2xl border border-border"
+-                                           bis_skin_checked="1"
+                                          >
+                                  <FinalCTA>
+                                    <section className="py-24 md:p...">
+                                      <div
+                                        className="container mx-auto px-4 max-w-4xl text-center"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <h2>
+                                        <p>
+                                        <div
+                                          className="mb-16"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="text-left max-w-2xl mx-auto bg-slate-50 p-8 rounded-2xl border bo..."
+-                                         bis_skin_checked="1"
+                                        >
+                                          <h3>
+                                          ...
+                                            <AccordionCollectionSlot.Slot ref={function}>
+                                              <AccordionCollectionSlot.SlotClone ref={function}>
+                                                <Primitive.div className="w-full" data-orientation="vertical" ...>
+                                                  <div
+                                                    className="w-full"
+                                                    data-orientation="vertical"
+                                                    onKeyDown={function handleEvent}
+                                                    ref={function}
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    ...
+                                                      <CollapsibleProvider scope={{...}} disabled={undefined} ...>
+                                                        <Primitive.div data-state="closed" data-disabled={undefined} ...>
+                                                          <div
+                                                            data-state="closed"
+                                                            data-disabled={undefined}
+                                                            data-orientation="vertical"
+                                                            className="border-b-0"
+                                                            ref={null}
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <_c2>
+                                                            ...
+                                                              <Presence present={false}>
+                                                                <Primitive.div data-state="closed" ...>
+                                                                  <div
+                                                                    data-state="closed"
+                                                                    data-disabled={undefined}
+                                                                    id="radix-_R_b9einelb_"
+                                                                    hidden={true}
+                                                                    role="region"
+                                                                    aria-labelledby="radix-_R_39einelb_"
+                                                                    data-orientation="vertical"
+                                                                    className="overflow-hidden text-sm data-[state=clo..."
+                                                                    style={{--radix-collapsible-content-height:undefined, ...}}
+                                                                    ref={function}
+-                                                                   bis_skin_checked="1"
+                                                                  >
+                                                    ...
+                                                      <CollapsibleProvider scope={{...}} disabled={undefined} ...>
+                                                        <Primitive.div data-state="closed" data-disabled={undefined} ...>
+                                                          <div
+                                                            data-state="closed"
+                                                            data-disabled={undefined}
+                                                            data-orientation="vertical"
+                                                            className="border-b-0"
+                                                            ref={null}
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <_c2>
+                                                            ...
+                                                              <Presence present={false}>
+                                                                <Primitive.div data-state="closed" ...>
+                                                                  <div
+                                                                    data-state="closed"
+                                                                    data-disabled={undefined}
+                                                                    id="radix-_R_d9einelb_"
+                                                                    hidden={true}
+                                                                    role="region"
+                                                                    aria-labelledby="radix-_R_59einelb_"
+                                                                    data-orientation="vertical"
+                                                                    className="overflow-hidden text-sm data-[state=clo..."
+                                                                    style={{--radix-collapsible-content-height:undefined, ...}}
+                                                                    ref={function}
+-                                                                   bis_skin_checked="1"
+                                                                  >
+                                                    ...
+                                                      <CollapsibleProvider scope={{...}} disabled={undefined} ...>
+                                                        <Primitive.div data-state="closed" data-disabled={undefined} ...>
+                                                          <div
+                                                            data-state="closed"
+                                                            data-disabled={undefined}
+                                                            data-orientation="vertical"
+                                                            className="border-b-0"
+                                                            ref={null}
+-                                                           bis_skin_checked="1"
+                                                          >
+                                                            <_c2>
+                                                            ...
+                                                              <Presence present={false}>
+                                                                <Primitive.div data-state="closed" ...>
+                                                                  <div
+                                                                    data-state="closed"
+                                                                    data-disabled={undefined}
+                                                                    id="radix-_R_f9einelb_"
+                                                                    hidden={true}
+                                                                    role="region"
+                                                                    aria-labelledby="radix-_R_79einelb_"
+                                                                    data-orientation="vertical"
+                                                                    className="overflow-hidden text-sm data-[state=clo..."
+                                                                    style={{--radix-collapsible-content-height:undefined, ...}}
+                                                                    ref={function}
+-                                                                   bis_skin_checked="1"
+                                                                  >
+                                <Footer>
+                                  <footer className="bg-muted/3...">
+                                    <div
+                                      className="container mx-auto px-4 md:px-6"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="col-span-2 md:col-span-2"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <LinkComponent href="/" className="flex items...">
+                                            <a className="flex items..." ref={function} onClick={function onClick} ...>
+                                              <div
+                                                className="w-6 h-6 rounded bg-primary flex items-center justify-center..."
+-                                               bis_skin_checked="1"
+                                              >
+                                              ...
+                                          <p>
+                                          <div
+                                            className="flex gap-4"
+-                                           bis_skin_checked="1"
+                                          >
+                                        <div
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+-                                         bis_skin_checked="1"
+                                        >
+                                      <_c className="mb-8">
+                                        <Separator ref={null} decorative={true} orientation="horizontal" ...>
+                                          <Primitive.div data-orientation="horizontal" role="none" ...>
+                                            <div
+                                              data-orientation="horizontal"
+                                              role="none"
+                                              className="shrink-0 bg-border h-[1px] w-full mb-8"
+                                              ref={null}
+-                                             bis_skin_checked="1"
+                                            >
+                                      <div
+                                        className="flex flex-col md:flex-row justify-between items-center gap-4 text-x..."
+-                                       bis_skin_checked="1"
+                                      >
+                                        <p>
+                                        <div
+                                          className="flex items-center gap-4"
+-                                         bis_skin_checked="1"
+                                        >
+                  ...
+
+[01:06:27.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:28.164] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           __processed_21608396-30a0-4944-bb17-fab2a60adcf3__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[01:06:46.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:46.903] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[01:08:51.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:52.738] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:27.457] Server  LOG     ✓ Compiled in 571ms
+[01:38:41.935] Server  LOG     ✓ Compiled in 505ms
+[01:38:48.203] Server  LOG     ✓ Compiled in 160ms
+[01:38:53.735] Server  LOG     ✓ Compiled in 129ms
+[01:39:02.523] Server  LOG     ✓ Compiled in 104ms
+[01:39:44.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:44.942] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           __processed_85719e0d-146b-4a81-81b2-31c3ba095bd0__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[01:39:49.349] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:49.537] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           __processed_e0b542f7-7aae-4ac5-872f-b532231575ef__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[01:40:19.838] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:20.030] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           __processed_150a5571-4817-4003-b8e2-181c6b3cb49c__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[02:46:08.656] Server  LOG     ✓ Compiled in 129ms
+[02:46:13.584] Server  LOG     ✓ Compiled in 126ms
+[02:46:19.320] Server  LOG     ✓ Compiled in 135ms
+[02:46:25.935] Server  LOG     ✓ Compiled in 157ms
+[02:48:00.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:48:00.494] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           __processed_9e6fc609-f7e7-4851-926e-dcbb2effd5c3__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[02:53:50.212] Server  LOG     ✓ Compiled in 146ms
+[02:54:01.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:54:01.804] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           __processed_f33d504e-c05a-4a50-bb9e-4017a9414fb7__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[02:54:25.990] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

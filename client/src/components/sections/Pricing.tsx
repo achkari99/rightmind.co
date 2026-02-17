@@ -80,7 +80,7 @@ const Pricing = () => {
 
 const FeatureItem = ({ text, primary, dark }: { text: string; primary?: boolean; dark?: boolean }) => (
   <li className="flex gap-3">
-    <Check className={cn("size-5 shrink-0", primary ? "text-primary" : dark ? "text-blue-400" : "text-green-500")} />
+    <Check className={cn("size-5 shrink-0", primary ? "text-primary" : dark ? "text-primary" : "text-green-500")} />
     <span>{text}</span>
   </li>
 );

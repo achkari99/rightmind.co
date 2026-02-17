@@ -6,7 +6,7 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-bold mb-6">Why we exist</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              NOVA INFRA was founded to bridge the gap between "experimental AI" and "practical business outcomes." We provide the stability growing Moroccan companies need to innovate safely.
+              RightMinds was founded to bridge the gap between "experimental AI" and "practical business outcomes." We provide the stability growing Moroccan companies need to innovate safely.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Our mission is to reduce technical risk for decision-makers, ensuring every automation project is predictable, measurable, and supportable.

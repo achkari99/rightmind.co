@@ -59,7 +59,7 @@ export default function SecurityReliability() {
                 </div>
               </div>
             </div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-blue-500/10 blur-3xl -z-10 rounded-full" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/10 blur-3xl -z-10 rounded-full" />
           </div>
         </div>
       </div>

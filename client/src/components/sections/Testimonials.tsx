@@ -39,7 +39,7 @@ function Feature({
 }) {
   return (
     <div className="p-4 bg-white rounded-xl border shadow-sm flex items-start gap-4">
-      <div className="p-2 bg-blue-50 text-blue-600 rounded-lg shrink-0">
+      <div className="p-2 bg-secondary text-primary rounded-lg shrink-0">
         <Icon size={20} />
       </div>
       <div>
