@@ -18,7 +18,7 @@ const CTA = ({ title, description }: CTAProps) => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button size="lg" variant="secondary" className="h-14 px-8 text-lg font-bold">
-            Request a 14-Day Pilot
+            Request Your Free 48H Prototype
           </Button>
           <Button size="lg" variant="outline" className="h-14 px-8 text-lg font-bold border-white text-white hover:bg-white/10">
             Get a Free 5-Point Audit
